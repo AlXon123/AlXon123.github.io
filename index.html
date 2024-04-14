@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronom Websitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Metronom</a></li>
+                <li><a href="instruments.html">Enstrümanlar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Metronom</h1>
+    <div class="metronome-container">
+        <p>Yeni başlayanlar için basit metronom</p>
+        <img src="/static/metronome.png" style="width:200px;height:200px;">
+        <div class="metronome_input">
+            <input type="range" id="bpmInput" min="30" max="200" value="120" step="1">
+            <span id="bpmValue">120 BPM</span>
+        </div>
+        <div class="buttons">
+            <button id="startBtn">Çalıştır</button>
+            <button id="stopBtn">Durdur</button>
+        </div>
+    </div>
+    <script src="metronome.js"></script>
+</body>
+</html>
